@@ -1,0 +1,15 @@
+MON AUTOBIOGRAPHIE - mode d'emploi
+
+1. Mets tes 5 documents Word dans le dossier "textes" et renomme-les :
+   texte1.docx, texte2.docx, texte3.docx, texte4.docx, texte5.docx
+   (Word : Fichier > Enregistrer sous > format .docx)
+
+2. Ouvre script.js et change en haut : le titre, ton prénom,
+   et le titre de chaque texte (ex: "Mon enfance").
+
+3. Ouvre le site AVEC UN SERVEUR (sinon le navigateur bloque la lecture des fichiers) :
+   - VS Code : installe l'extension "Live Server", clic droit sur index.html > "Open with Live Server"
+   - ou en ligne : glisse tout le dossier sur https://app.netlify.com/drop
+
+Si tu ouvres index.html par double-clic, ca marche quand meme :
+clique sur un texte puis sur "Choisir le fichier Word".

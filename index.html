@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mon autobiographie</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Nunito:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <p class="sticker" id="auteur"></p>
+  <h1 id="titre"></h1>
+  <p class="sous" id="sous"></p>
+</header>
+
+<main>
+  <section id="accueil">
+    <div class="cartes" id="cartes"></div>
+  </section>
+
+  <section id="lecture" hidden>
+    <button class="retour" id="retour">← Tous mes textes</button>
+    <article class="feuille" id="feuille">
+      <h2 id="lecture-titre"></h2>
+      <div class="texte" id="lecture-texte"></div>
+      <div class="pager">
+        <button id="prec"></button>
+        <button id="suiv"></button>
+      </div>
+    </article>
+  </section>
+</main>
+
+<input type="file" id="fichier" accept=".docx" hidden>
+<script src="mammoth.browser.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

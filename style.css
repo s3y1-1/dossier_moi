@@ -1,0 +1,32 @@
+:root{--ink:#2b2140;--bg:#fff8e7;--soleil:#ffc933;--corail:#ff6b6b;--menthe:#3ed6c4;--violet:#b39cff;--ciel:#5cccf5}
+*{box-sizing:border-box}
+body{margin:0;color:var(--ink);font:400 18px/1.55 "Nunito",system-ui,sans-serif;
+background:var(--bg) radial-gradient(circle at 10% 20%,#ffd9e0 0 6px,transparent 7px),radial-gradient(circle at 85% 12%,#cdeffc 0 8px,transparent 9px),radial-gradient(circle at 70% 80%,#d7f7f1 0 7px,transparent 8px);
+background-size:auto,140px 140px,180px 180px,160px 160px}
+.hero{text-align:center;padding:56px 20px 24px}
+h1{font:700 clamp(2.6rem,9vw,5.5rem)/1 "Fredoka",sans-serif;margin:16px 0 12px;letter-spacing:-.01em;text-shadow:4px 4px 0 var(--soleil)}
+.sous{font-size:1.2rem;margin:0 auto;max-width:34ch}
+.sticker{display:inline-block;background:var(--corail);color:#fff;font:500 1rem "Fredoka",sans-serif;padding:6px 18px;border-radius:999px;transform:rotate(-3deg);margin:0}
+.sticker:empty{display:none}
+main{max-width:1000px;margin:0 auto;padding:16px 20px 72px}
+.cartes{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;padding-top:24px}
+.carte{all:unset;cursor:pointer;background:var(--c);border:3px solid var(--ink);border-radius:28px;padding:24px;min-height:190px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:6px 6px 0 var(--ink);transition:transform .15s,box-shadow .15s}
+.carte:nth-child(odd){transform:rotate(-1deg)}.carte:nth-child(even){transform:rotate(1deg)}
+.carte:hover,.carte:focus-visible{transform:translate(-2px,-4px) rotate(0);box-shadow:10px 10px 0 var(--ink)}
+.carte:focus-visible{outline:3px solid var(--ink);outline-offset:4px}
+.num{font:700 3rem/1 "Fredoka",sans-serif}
+.carte h3{font:700 1.6rem/1.15 "Fredoka",sans-serif;margin:8px 0 0}
+.etat{font-size:.9rem;font-weight:700}
+.vide{opacity:.55;border-style:dashed}
+.retour{all:unset;cursor:pointer;font:500 1.05rem "Fredoka",sans-serif;background:#fff;border:3px solid var(--ink);border-radius:999px;padding:8px 20px;box-shadow:3px 3px 0 var(--ink)}
+.retour:hover{background:var(--soleil)}
+.feuille{background:#fff;border:3px solid var(--ink);border-top:14px solid var(--c);border-radius:24px;box-shadow:8px 8px 0 var(--ink);margin-top:24px;padding:clamp(24px,5vw,56px)}
+.feuille h2{font:700 clamp(2rem,5vw,3rem)/1.1 "Fredoka",sans-serif;margin:0 0 24px}
+.texte{font-size:1.15rem;line-height:1.8;max-width:65ch}
+.texte p{margin:0 0 1.1em}.texte img{max-width:100%;height:auto}.texte table{display:block;overflow-x:auto}
+.texte>p:first-of-type::first-letter{font:700 3.6em/.85 "Fredoka",sans-serif;float:left;padding:.08em .12em 0 0;color:var(--c)}
+.manque{background:#fff3c4;border:2px dashed var(--ink);border-radius:16px;padding:20px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-top:40px;flex-wrap:wrap}
+.pager button,.action{all:unset;cursor:pointer;font:500 1rem "Fredoka",sans-serif;background:var(--soleil);border:3px solid var(--ink);border-radius:999px;padding:8px 20px}
+.pager button:hover,.action:hover{background:var(--corail);color:#fff}
+.pager button:empty{visibility:hidden}
