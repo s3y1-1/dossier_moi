@@ -1,2 +1,0 @@
-Mets ici tes 5 documents Word, avec exactement ces noms :
-texte1.docx, texte2.docx, texte3.docx, texte4.docx, texte5.docx
